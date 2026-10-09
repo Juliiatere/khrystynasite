@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Христина Єлістратова — карʼєрна консультантка у Великій Британії</title>
-<meta name="description" content="Допомагаю після переїзду зрозуміти британський ринок праці, посилити резюме та LinkedIn і знайти роботу. Консультації українською в Zoom.">
+<meta name="description" content="Допомагаю після переїзду зрозуміти британський ринок праці, посилити резюме та LinkedIn і знайти роботу.">
 <meta name="theme-color" content="#f2e9df">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Христина Єлістратова — карʼєрна консультантка">
-<meta property="og:description" content="Ваша карʼєра у Великій Британії: з чого почати? Консультації українською в Zoom.">
+<meta property="og:description" content="Ваша карʼєра у Великій Британії: з чого почати? CV, LinkedIn, співбесіди та план пошуку роботи.">
 <meta property="og:image" content="og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -32,6 +32,7 @@
   --gutter:20px; --max:1120px;
 }
 *{box-sizing:border-box}
+a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--page);color:var(--ink);font-family:var(--b);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
@@ -54,7 +55,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 /* buttons */
 .btn{display:flex;align-items:center;justify-content:center;width:100%;height:52px;padding:0 20px;border-radius:12px;background:var(--accent);color:#fff;font-family:var(--b);font-weight:600;font-size:16px;line-height:1.4;text-decoration:none;transition:background-color .2s,transform .15s,box-shadow .2s}
-.btn:hover{background:var(--accent-hover);box-shadow:0 8px 20px rgba(198,78,34,.22)}
 .btn:active{transform:scale(.98)}
 .btn--sm{width:auto;height:32px;padding:0 16px;border-radius:8px}
 
@@ -66,6 +66,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .brand b{font-family:var(--h);font-weight:600;font-size:14px;line-height:1.13;white-space:nowrap}
 .brand span{font-family:var(--h);font-weight:600;font-size:10px;line-height:1.1;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
 .burger{width:44px;height:44px;margin-right:-10px;display:grid;place-items:center;border-radius:10px}
+.header .burger{margin-left:-14px}
 .burger svg{width:24px;height:24px}
 .nav-desktop{display:none}
 
@@ -111,7 +112,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .services .wrap{padding-top:32px;padding-bottom:32px;display:flex;flex-direction:column;gap:20px}
 .cards{display:grid;gap:20px}
 .card{background:var(--white);border:.5px solid var(--accent);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:24px;transition:transform .25s,box-shadow .25s}
-.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(58,47,40,.08)}
 .card-body{display:flex;flex-direction:column;gap:12px;flex:1}
 .card-top{display:flex;flex-direction:column;gap:16px}
 .card-tag{display:flex;flex-direction:column;gap:12px}
@@ -160,7 +160,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .mail{font-family:var(--h);font-weight:700;font-size:16px;line-height:1.1;letter-spacing:.06em;text-decoration:underline;text-underline-offset:3px;word-break:break-all}
 .socials{display:flex;gap:12px}
 .soc{width:44px;height:44px;border-radius:12px;background:var(--icon-bg);display:grid;place-items:center;transition:background-color .2s,transform .15s}
-.soc:hover{background:var(--accent)}
 .soc:active{transform:scale(.94)}
 .soc svg{width:22px;height:22px;fill:#fff}
 .legal{display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.4;color:var(--muted)}
@@ -171,7 +170,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .menu-head{display:flex;align-items:center;gap:12px;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .menu nav{display:flex;flex-direction:column;padding-top:16px}
 .menu nav a{font-family:var(--h);font-weight:500;font-size:24px;line-height:1.25;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--line);transform:translateY(8px);opacity:0;transition:transform .35s,opacity .35s,color .2s}
-.menu nav a:hover{color:var(--accent)}
 .menu.open nav a{transform:none;opacity:1}
 .menu.open nav a:nth-child(2){transition-delay:.04s}.menu.open nav a:nth-child(3){transition-delay:.08s}.menu.open nav a:nth-child(4){transition-delay:.12s}.menu.open nav a:nth-child(5){transition-delay:.16s}
 .menu-foot{margin-top:auto;padding-top:24px;padding-bottom:calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:20px}
@@ -187,7 +185,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .sheet-sub{margin:8px 0 18px;color:var(--ink-2);font-size:15px;line-height:1.5}
 .channels{display:flex;flex-direction:column;gap:10px}
 .channel{display:flex;align-items:center;gap:14px;padding:12px;border-radius:16px;background:var(--white);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,transform .15s}
-.channel:hover{border-color:var(--accent)}
 .channel:active{transform:scale(.98)}
 .channel .soc{flex:none}
 .channel span{flex:1;display:flex;flex-direction:column;gap:2px}
@@ -197,7 +194,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .template{margin-top:16px;background:var(--surface);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
 .template p{margin:0;font-size:14px;line-height:1.5;color:var(--ink)}
 .copy-btn{align-self:flex-start;height:36px;padding:0 14px;border-radius:10px;border:1px solid var(--ink);font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:background-color .2s,color .2s}
-.copy-btn:hover{background:var(--ink);color:#fff}
 .copy-btn.done{background:var(--accent);border-color:var(--accent);color:#fff}
 body.locked{overflow:hidden}
 
@@ -220,7 +216,6 @@ body.locked{overflow:hidden}
   .burger{display:none}
   .nav-desktop{display:flex;gap:28px;margin-right:16px}
   .nav-desktop a{text-decoration:none;font-size:14px;color:var(--ink-2);transition:color .2s}
-  .nav-desktop a:hover{color:var(--accent)}
   .btn--sm{height:40px;padding:0 20px;border-radius:10px}
   .hero{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding-top:48px;padding-bottom:64px}
   .hero-photo,.intro{padding:0}
@@ -247,6 +242,15 @@ body.locked{overflow:hidden}
   .sheet-open .sheet{transform:translate(-50%,50%);opacity:1;visibility:visible;pointer-events:auto}
   .sheet-handle{display:none}
 }
+@media (hover:hover) and (pointer:fine){
+.btn:hover{background:var(--accent-hover);box-shadow:0 8px 20px rgba(198,78,34,.22)}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(58,47,40,.08)}
+.soc:hover{background:var(--accent)}
+.menu nav a:hover{color:var(--accent)}
+.channel:hover{border-color:var(--accent)}
+.copy-btn:hover{background:var(--ink);color:#fff}
+.nav-desktop a:hover{color:var(--accent)}
+}
 </style>
 </head>
 <body>
@@ -257,14 +261,14 @@ body.locked{overflow:hidden}
   <symbol id="i-quote" viewBox="0 0 18 14"><path transform="rotate(180 9 7)" d="M0 14V9.3C0 4.6 2 1.5 6 0l1.2 1.9C5 3 4 4.6 3.8 6.6H7.4V14H0zm10.6 0V9.3c0-4.7 2-7.8 6-9.3L17.8 1.9C15.6 3 14.6 4.6 14.4 6.6H18V14h-7.4z"/></symbol>
   <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
   <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.94 4.26 18.7 19.53c-.24 1.08-.88 1.35-1.79.84l-4.94-3.64-2.38 2.29c-.26.26-.48.48-.99.48l.35-5.02 9.14-8.26c.4-.35-.09-.55-.62-.2L6.17 13.13l-4.86-1.52c-1.06-.33-1.08-1.06.22-1.57L20.5 2.7c.88-.33 1.65.2 1.44 1.56z"/></symbol>
-  <symbol id="i-threads" viewBox="0 0 24 24"><path d="M17.3 11.1c-.1-.05-.2-.09-.3-.13-.18-3.3-1.98-5.19-5.01-5.21h-.04c-1.81 0-3.32.77-4.25 2.18l1.67 1.15c.69-1.05 1.78-1.28 2.58-1.28h.03c1 .01 1.75.3 2.24.86.35.41.59.98.71 1.69-.89-.15-1.85-.2-2.88-.14-2.9.17-4.77 1.86-4.64 4.21.06 1.19.66 2.22 1.68 2.89.86.57 1.98.85 3.13.78 1.53-.08 2.72-.66 3.55-1.73.63-.81 1.03-1.86 1.21-3.18.73.44 1.27 1.02 1.57 1.72.51 1.19.54 3.15-1.06 4.75-1.4 1.4-3.09 2.01-5.64 2.03-2.83-.02-4.98-.93-6.37-2.7-1.31-1.66-1.98-4.05-2.01-7.12.03-3.07.7-5.46 2.01-7.12 1.39-1.77 3.54-2.68 6.37-2.7 2.86.02 5.04.94 6.49 2.72.71.88 1.24 1.98 1.6 3.27l1.95-.52c-.44-1.6-1.12-2.98-2.05-4.12-1.86-2.29-4.59-3.46-8.1-3.49h-.01c-3.5.02-6.19 1.2-8.01 3.5C1.72 6.46.88 9.33.85 12.99v.02c.03 3.66.87 6.53 2.5 8.59 1.82 2.3 4.51 3.48 8.01 3.5h.01c3.11-.02 5.3-.84 7.11-2.64 2.37-2.37 2.3-5.33 1.52-7.15-.56-1.3-1.62-2.36-3.07-3.06zm-5.37 5.05c-1.3.07-2.65-.51-2.71-1.76-.05-.93.66-1.96 2.8-2.09.25-.01.49-.02.72-.02.78 0 1.5.08 2.16.22-.25 3.07-1.69 3.58-2.97 3.65z"/></symbol>
+  <symbol id="i-threads" viewBox="0 0 24 24"><path d="M18.263 11.097C18.233 7.611 16.343 5.511 13.152 5.511C11.022 5.511 9.23 6.474 8.289 8.01L10.351 9.448C10.886 8.605 11.623 7.905 12.979 7.905C14.507 7.905 15.297 8.755 15.523 10.336C14.783 10.2226 14.0356 10.1648 13.287 10.163C9.162 10.163 7.219 12.03 7.219 14.499C7.219 16.968 9.162 18.489 12.023 18.489C15.162 18.489 17.036 16.374 17.804 13.754C18.602 14.115 19.152 14.958 19.152 16.224C19.152 19.611 15.245 21.456 11.932 21.456C7.047 21.456 3.855 18.249 3.855 13.032C3.855 6.64 8.078 2.545 13.755 2.545C17.563 2.545 19.445 4.216 20.725 6.459L22.833 4.984C21.44 2.078 18.331 0 13.663 0C6.227 0 1.168 5.277 1.168 12.934C1.168 19.934 6.121 24 12.024 24C16.902 24 21.833 21.154 21.833 16.284C21.833 13.739 20.372 12.053 18.263 11.097ZM11.934 15.952C10.857 15.952 9.908 15.44 9.908 14.499C9.908 13.016 11.73 12.565 13.514 12.565C14.192 12.565 14.854 12.61 15.441 12.738C15.019 14.665 13.77 15.953 11.933 15.952H11.934Z"/></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.3V17h16V7.3l-8 5.6-8-5.6zM5.7 7l6.3 4.4L18.3 7H5.7z"/></symbol>
   <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 <header class="header" id="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="На початок сторінки">
+    <a class="brand" href="#" data-top aria-label="На початок сторінки">
       <b>Христина Єлістратова</b>
       <span>Карʼєрна консультантка</span>
     </a>
@@ -408,7 +412,7 @@ body.locked{overflow:hidden}
         <div class="process-title"><h2 class="h2">Від запиту — до конкретного плану.</h2><svg fill="#74665b" viewBox="0 0 42 42" aria-hidden="true"><use href="#i-quote" x="10" y="12" width="22" height="17"/></svg></div>
       </div>
       <ol class="steps">
-        <li class="step reveal"><span class="num">01</span><h3 class="h3">Онлайн-зустріч</h3><p>Консультація проходить у Zoom і триває 60 хвилин.</p></li>
+        <li class="step reveal"><span class="num">01</span><h3 class="h3">Онлайн-зустріч</h3><p>Консультація проходить онлайн і триває 60 хвилин.</p></li>
         <li class="step reveal" style="--d:.06s"><span class="num">02</span><h3 class="h3">Розбираємо вашу ситуацію</h3><p>Обговорюємо ваш досвід, цілі, сильні сторони та труднощі з пошуком роботи у Великій Британії.</p></li>
         <li class="step reveal" style="--d:.12s"><span class="num">03</span><h3 class="h3">Створюємо персональний навігатор</h3><p>Я формую Career Roadmap: ресурси, вакансії та платформи для пошуку, рекрутингові агентства, нетворкінг, навчання, волонтерство та інші можливості — з прямими посиланнями.</p></li>
         <li class="step reveal" style="--d:.18s"><span class="num">04</span><h3 class="h3">Залишаємося на звʼязку</h3><p>Після консультації ми залишаємося на звʼязку, поки ви не знайдете свою роботу.</p></li>
@@ -479,7 +483,7 @@ body.locked{overflow:hidden}
 <!-- MENU -->
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Меню">
   <div class="menu-head wrap">
-    <a class="brand" href="#top" data-menu-close><b>Христина Єлістратова</b><span>Карʼєрна консультантка</span></a>
+    <a class="brand" href="#" data-top data-menu-close><b>Христина Єлістратова</b><span>Карʼєрна консультантка</span></a>
     <button class="burger" aria-label="Закрити меню" data-menu-close>
       <svg viewBox="0 0 24 24" fill="none" stroke="#3a2f28" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
@@ -512,7 +516,7 @@ body.locked{overflow:hidden}
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3a2f28" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
   </div>
-  <p class="sheet-sub">Я відповім протягом 1–2 днів і запропоную час консультації в Zoom.</p>
+  <p class="sheet-sub">Я відповім протягом 1–2 днів і запропоную зручний час консультації.</p>
   <div class="channels">
     <a class="channel" data-link="telegram" target="_blank" rel="noopener">
       <i class="soc"><svg><use href="#i-telegram"/></svg></i><span><b>Telegram</b><small>Найшвидше — одразу в чат</small></span><svg><use href="#i-chev"/></svg>
@@ -533,6 +537,7 @@ body.locked{overflow:hidden}
 
 <script>
 document.documentElement.classList.add('js');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ===== ПОСИЛАННЯ: замініть TELEGRAM на справжній нікнейм ===== */
 const LINKS = {
@@ -554,6 +559,9 @@ function applyLinks(){
   document.getElementById('tpl').textContent = tplText();
 }
 applyLinks();
+
+/* logo -> top */
+document.querySelectorAll('[data-top]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); setTimeout(() => scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'}), 0); }));
 
 /* header shadow */
 const header = document.querySelector('.header');
@@ -604,7 +612,6 @@ copyBtn.addEventListener('click', async () => {
 });
 
 /* reveal on scroll + count-up */
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 function countUp(el){
   const end = +el.dataset.count; if (reduce) return;
   const t0 = performance.now(), dur = 1100;
